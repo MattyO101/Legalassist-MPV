@@ -12,7 +12,7 @@ describe('Document API', () => {
 
   beforeAll(async () => {
     // Connect to test database
-    const url = process.env.MONGODB_URL || 'mongodb://localhost:27017/legalassist-documents-test';
+    const url = process.env.MONGODB_URL || 'mongodb://localhost:27017/legalassist-test';
     await mongoose.connect(url);
 
     // Clean up test database

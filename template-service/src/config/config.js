@@ -4,7 +4,7 @@ const config = {
   env: process.env.NODE_ENV || 'development',
   port: process.env.PORT || 9002,
   mongoose: {
-    url: process.env.MONGODB_URL || 'mongodb://localhost:27017/legalassist-templates',
+    url: process.env.MONGODB_URL || 'mongodb://localhost:27017/legalassist',
     options: {
       useNewUrlParser: true,
       useUnifiedTopology: true,
