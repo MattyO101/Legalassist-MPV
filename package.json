@@ -1,4 +1,22 @@
 {
+  "name": "legalassist-mvp",
+  "version": "1.0.0",
+  "description": "LegalAssist MVP - A legal document review and generation system",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test:auth && npm run test:document && npm run test:template",
+    "test:auth": "cd auth-service && npm test",
+    "test:document": "cd document-analysis-service && npm test",
+    "test:template": "cd template-service && npm test",
+    "test:frontend": "cd frontend && npm test",
+    "start:auth": "cd auth-service && npm run dev",
+    "start:document": "cd document-analysis-service && npm run dev",
+    "start:template": "cd template-service && npm run dev",
+    "start:frontend": "cd frontend && npm start",
+    "install:all": "npm install && cd auth-service && npm install && cd ../document-analysis-service && npm install && cd ../template-service && npm install && cd ../frontend && npm install"
+  },
+  "author": "",
+  "license": "MIT",
   "dependencies": {
     "axios": "^1.8.4"
   }
